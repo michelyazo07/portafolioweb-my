@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    padding-top: 1.5rem;
+    width: 350px;
+    height: 100vh;
+    transform: translatex(-350px);
+    background-color: rgb(247, 255, 240);
+    transition: transform 0.3s;
+}
+@media screen and (min-width:768px) {
+    .nav{
+        transform:translateX(-300px);
+    }
+}
+@media screen and (min-width:1024px) {
+    .nav{
+        transform:translateX(0px);
+    }
+}
+.nav--show {
+    transform:translateX(-300px);
+}
+.nav--show .toggle-menu {
+    left: 295px;
+    top: 0;
+    color: #333;
+}
+.toggle-menu {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    z-index: 100;
+}
+
+@media screen and (min-width:768px) {
+    .toggle-menu{
+        display: none;
+    }
+}
+.main {
+    margin-left: 0;
+    min-height: 100vh;
+    background-color: rgb(255, 240, 254);
+    text-align: center;
+    overflow: hidden;
+}
+@media screen and (min-width:768px) {
+    .main{
+       margin-left: 50px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .main{
+       margin-left: 350px;
+    }
+}
+.main-menu {
+    padding-left: 0;
+    margin-top: 45px;
+}
+.main-menu--show {
+    transform: translateX(260px);
+}
+.main-menu--show .main-menu__item{
+  transform: translateX(-300px);
+}
+.main-menu--show .main-menu__icon{
+    transform: translateX(300px);
+    color: #333;
+}
+.main-menu__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+.main-menu__link {
+    width: 280px;
+    padding: 1rem 3rem;
+    border-radius: 0 10px 10px 0;
+    background-color: blueviolet;
+    color: rgb(247, 255, 240);
+    text-decoration: none;
+}
+.main-menu__icon {
+    margin-right: 1.5rem;
+}
+@media screen and (min-width:768px) {
+    .main-menu__icon{
+      transform: translateX(260px);
+      color: #333;
+    }
+}
+@media screen and (min-width:1024px) {
+    .main-menu__icon{
+       transform: translateX(0);
+       color:rgb(247, 255, 240) ;
+    }
+}
