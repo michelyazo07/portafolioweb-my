@@ -1,16 +1,26 @@
 body {
     margin: 0;
 }
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* INFORMACION DEL MENU */
+.logomy {
+    width:100% ;
+    padding: 55px 55px 0px 55px;
+}
+
 .nav {
     position: fixed;
     top: 0;
-    padding-top: 1.5rem;
     width: 350px;
-    height: 100vh;
+    height: 95vh;
     transform: translatex(-350px);
-    background-color: rgb(247, 255, 240);
+    background-color: #E8F2F7;
     transition: transform 0.3s;
 }
+
+/* MEDIA DEL NAV */
 @media screen and (min-width:768px) {
     .nav{
         transform:translateX(-300px);
@@ -21,6 +31,7 @@ body {
         transform:translateX(0px);
     }
 }
+
 .nav--show {
     transform:translateX(-300px);
 }
@@ -41,18 +52,22 @@ body {
     z-index: 100;
 }
 
+/*MEDIA DE TOGGLE*/
 @media screen and (min-width:768px) {
     .toggle-menu{
         display: none;
     }
 }
+
 .main {
     margin-left: 0;
     min-height: 100vh;
-    background-color: rgb(255, 240, 254);
+    background-image: url(../images/fondo-logo.png);
     text-align: center;
     overflow: hidden;
 }
+
+/*MEDIA DEL MAIN*/
 @media screen and (min-width:768px) {
     .main{
        margin-left: 50px;
@@ -63,6 +78,7 @@ body {
        margin-left: 350px;
     }
 }
+
 .main-menu {
     padding-left: 0;
     margin-top: 45px;
@@ -94,6 +110,8 @@ body {
 .main-menu__icon {
     margin-right: 1.5rem;
 }
+
+/*MEDIA DEL MAIN-MENU__ICON*/
 @media screen and (min-width:768px) {
     .main-menu__icon{
       transform: translateX(260px);
@@ -105,4 +123,26 @@ body {
        transform: translateX(0);
        color:rgb(247, 255, 240) ;
     }
+}
+
+/* INFROMACION DEL HEADER*/
+
+.fotomiche {
+    width: 100%;
+}
+.cajaeslogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eslogan {
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+
+.filosofia {
+    height: 250px;
+    background-color: #A2629D;
 }
